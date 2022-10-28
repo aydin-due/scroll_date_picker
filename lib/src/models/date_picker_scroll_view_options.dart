@@ -18,9 +18,9 @@ class ScrollViewDetailOptions {
     this.alignment = Alignment.centerLeft,
     this.margin,
     this.selectedTextStyle =
-        const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+        const TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
     this.textStyle =
-        const TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
+        const TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
   });
 
   /// The text printed next to the year, month, and day.

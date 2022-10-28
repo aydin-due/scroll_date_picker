@@ -15,8 +15,8 @@ class ScrollDatePicker extends StatefulWidget {
     DatePickerOptions? options,
     DatePickerScrollViewOptions? scrollViewOptions,
     this.indicator,
-  })  : minimumDate = minimumDate ?? DateTime(1960, 1, 1),
-        maximumDate = maximumDate ?? DateTime.now(),
+  })  : minimumDate = minimumDate ?? DateTime.now(),
+        maximumDate = maximumDate ?? DateTime(2030, 12, 31),
         locale = locale ?? const Locale('en'),
         options = options ?? const DatePickerOptions(),
         scrollViewOptions = scrollViewOptions ?? const DatePickerScrollViewOptions(),
@@ -252,9 +252,12 @@ class _ScrollDatePickerState extends State<ScrollDatePicker> {
                   Container(
                     height: widget.options.itemExtent,
                     decoration: BoxDecoration(
-                      color: Colors.grey.withOpacity(0.15),
-                      borderRadius: const BorderRadius.all(Radius.circular(4)),
-                    ),
+                      border: Border(
+                        top: BorderSide(
+                            width: 0.5, color: Colors.black),
+                        bottom: BorderSide(
+                            width: 0.5, color: Colors.black),
+                      ),)
                   ),
               Expanded(
                 child: Container(
