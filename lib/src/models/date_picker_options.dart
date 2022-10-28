@@ -3,7 +3,7 @@ class DatePickerOptions {
     this.itemExtent = 30.0,
     this.diameterRatio = 3,
     this.perspective = 0.01,
-    this.isLoop = true,
+    this.isLoop = false,
   });
 
   /// Size of each child in the main axis
