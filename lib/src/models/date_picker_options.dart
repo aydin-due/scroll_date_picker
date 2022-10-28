@@ -1,8 +1,8 @@
 class DatePickerOptions {
   const DatePickerOptions({
-    this.itemExtent = 30.0,
+    this.itemExtent = 50.0,
     this.diameterRatio = 3,
-    this.perspective = 0.01,
+    this.perspective = 0.005,
     this.isLoop = false,
   });
 
